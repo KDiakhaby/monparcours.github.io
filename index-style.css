@@ -1,0 +1,729 @@
+/* Réinitialisation par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style de base pour le corps de la page */
+body {
+  background: #f1f1f1;
+  font-family: 'Abel', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #444;
+}
+
+h1 {
+  font-family: 'Crete Round', serif;
+  font-size: 45px;
+}
+
+/*le logo */
+.logo {
+  background-image: url('chemin/vers/votre/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 80px;
+  display: block;
+  /* Permet d'étendre la zone cliquable à toute la largeur du conteneur */
+  text-indent: -9999px;
+  /* Masque le texte, important pour l'accessibilité */
+}
+
+
+.wrapper-1 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0px;
+  position: fixed;
+  background: linear-gradient(to right, #8bbf1c, #ddee26);
+  z-index: 10000;
+}
+
+
+.wrapper-main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+  z-index: 1;
+}
+
+
+
+.wrapper-contact {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.orange {
+  color: #ff7a00
+}
+
+small {
+  font-size: 13px;
+  font-style: italic;
+}
+
+/* MAIN IMAGE */
+
+
+#main-image .pages-container {
+    /* Gradient de couleurs associées à la Géomatique */
+  background: linear-gradient(to right, #1f618d, #3498db, #2ecc71, #f39c12);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Empêche la répétition de l'image de fond */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+  list-style: none;
+  z-index: 1;
+}
+
+.pages-container li {
+  margin: 50px 150px;
+  padding-left: 20px;
+}
+
+.pages-container a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  align-items: center;
+}
+
+
+/* Pour les pages links */
+
+.page-link {
+  overflow: hidden;
+  width: 200px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.page-link a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+
+  /* Couleur du texte sur l'image */
+  padding: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+}
+
+#licence1-link {
+  background-color: #FF5733;
+  width: 200px;
+  height: 100px;
+  top: 0;
+  left: 0;
+}
+
+#licence2-link {
+  background-color: #33FF57;
+  width: 200px;
+  height: 100px;
+  top: 0;
+  right: 0;
+}
+
+#licence3-link {
+  background-color: #5733FF;
+  width: 200px;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+}
+
+#carte-link {
+  background-color: hwb(71 3% 14%);
+  width: 200px;
+  height: 100px;
+  top: 50%;
+
+}
+
+#contact-link {
+  background-color: #0cd7e1;
+  width: 200px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+}
+
+h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 150px 0 40px 0;
+  margin-bottom: 20px;
+  color: darkorange;
+}
+
+.button-1 {
+  display: block;
+  width: 120px;
+  height: 50px;
+  background: #ff7a00;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 auto;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 3px
+}
+
+.button-1:hover {
+  background: #02b8dd;
+}
+
+header {
+  height: 120px;
+  /*margin-bottom: -20px;*/
+  z-index: 1;
+}
+
+/* Style pour l'en-tête */
+h1 {
+  float: right;
+  margin-top: 30px;
+  margin-right: 150px;
+  padding-bottom: 1px;
+}
+
+header nav {
+  float: left;
+  margin-top: 20px;
+  margin-left: 50px;
+  z-index: 1000;
+  padding-bottom: 1px;
+
+}
+
+.logo {
+  width: 170px;
+  height: 50px;
+  background: url('images/logo.png') no-repeat;
+  background-position: top center;
+  /* Positionnement initial */
+  background-size: contain;
+  padding-bottom: 30px;
+  z-index: 1000;
+  display: inline-block;
+}
+
+header nav ul li {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+li {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+
+
+}
+
+header nav ul a {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+
+nav a {
+  text-decoration: none;
+  /* Supprime le soulignement des liens */
+  color: #444;
+  /* Couleur du texte non visité */
+  font-weight: bold;
+  /* Met en gras le texte des liens */
+  font-size: 1.2em;
+  /* Taille du texte des liens */
+  padding: 0px;
+}
+
+
+/* Style pour la section principale */
+main {
+  margin-top: 20px;
+}
+
+/* Style pour les titres de section */
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Style pour les paragraphes */
+p,
+.justifie {
+  margin-bottom: 10px;
+  text-align: justify;
+  margin: 10px;
+}
+
+.justifie {
+  font-family: 'Times New Roman', serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  padding: 20px;
+  border: 2px solid #000;
+  margin: 20px;
+  background-color: #f5f5f5;
+}
+
+
+/* Style pour le pied de page */
+
+footer {
+  height: 260px;
+  background-color: #444;
+}
+
+footer h5 {
+  color: #fff;
+  text-align: center;
+  padding: 60px;
+  font-size: 35px;
+}
+
+.copyright {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 0px;
+  color: #777;
+  font-size: 20px;
+}
+
+#contact {
+  padding: 80px 0;
+  /*text-align: center;*/
+  margin-bottom: 200px;
+}
+
+h3 {
+  width: 400px;
+  text-transform: uppercase;
+  margin: 0 auto 20px auto;
+  border-bottom: 1px solid #02b8dd;
+  padding: 20px;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #45a049;
+}
+
+
+/* Media query pour les smartphones */
+
+@media only screen and (max-width: 600px) {
+
+  header {
+    float: none;
+    margin: 0;
+    text-align: center;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav ul {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  nav li {
+    float: none;
+    width: 100%;
+  }
+
+  #main-image {
+    height: 150px;
+    margin-top: 50px;
+    padding: 5px;
+    text-align: center;
+  }
+
+
+  .wrapper-1,
+  .wrapper-main,
+  .wrapper-contact {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+
+  .pages-container li {
+    display: flex;
+    margin: 20px 10px;
+    padding: auto;
+    text-align: center;
+    font-size: 16px;
+    width: 5px;
+    height: 5px;
+  }
+
+  #main-image h2 {
+    font-size: 20px;
+  }
+
+  .page-link {
+    width: 5%;
+    margin: 100px 0;
+    text-align: center;
+  }
+
+  h1 {
+    padding: 1px 0;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  nav a {
+    padding: 7px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 100px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  #main-image {
+    height: 150px;
+    margin-top: 0;
+    margin-bottom: 500px;
+    padding: 50px;
+    text-align: center;
+  }
+
+
+  .pages-container li {
+    display: flex;
+    margin: 0;
+    padding: auto;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+  }
+
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .page-link {
+    width: 50%;
+    margin: 100px 0;
+    text-align: center;
+  }
+
+  #contactForm {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  #contactForm label,
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  #contactForm textarea {
+    resize: vertical;
+    /* Permet le redimensionnement vertical de la zone de texte */
+  }
+
+  #contactForm input[type="submit"],
+  #contactForm input[type="reset"] {
+    width: 49%;
+    /* Répartit les boutons sur deux colonnes */
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    float: none;
+    margin: 0;
+    display: block;
+    width: 120px;
+    /* Ajustez la taille du logo pour les petits écrans */
+    height: 35px;
+    /* Ajustez la taille du logo pour les petits écrans */
+    background-position: center center;
+    /* Centrer le logo sur les petits écrans */
+  }
+
+  /* Media query pour les tablettes */
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+
+    nav a {
+      font-size: 8px;
+    }
+
+    header {
+      float: none;
+      margin: 0;
+      text-align: center;
+    }
+  
+    nav {
+      text-align: center;
+    }
+  
+    nav ul {
+      display: block;
+      width: 100%;
+      margin: 0;
+    }
+  
+    nav li {
+      float: none;
+      width: 100%;
+    }
+  
+    #main-image {
+      height: 150px;
+      margin-top: 50px;
+      padding: 5px;
+      text-align: center;
+    }
+  
+  
+    .wrapper-1,
+    .wrapper-main,
+    .wrapper-contact {
+      width: 100%;
+      padding: 0 20px;
+    }
+  
+  
+    .pages-container li {
+      display: flex;
+      margin: 20px 10px;
+      padding: auto;
+      text-align: center;
+      font-size: 16px;
+      width: 5px;
+      height: 5px;
+    }
+  
+    #main-image h2 {
+      font-size: 20px;
+    }
+  
+    .page-link {
+      width: 5%;
+      margin: 100px 0;
+      text-align: center;
+    }
+  
+    h1 {
+      padding: 1px 0;
+      display: block;
+      text-align: center;
+      font-size: 12px;
+    }
+  
+    nav a {
+      padding: 7px 0;
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      margin-right: 100px;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    #main-image {
+      height: 150px;
+      margin-top: 0;
+      margin-bottom: 500px;
+      padding: 50px;
+      text-align: center;
+    }
+  
+  
+    .pages-container li {
+      display: flex;
+      margin: 0;
+      padding: auto;
+      text-align: center;
+      font-size: 16px;
+      width: 100%;
+    }
+  
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .page-link {
+      width: 50%;
+      margin: 100px 0;
+      text-align: center;
+    }
+  
+    #contactForm {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+    }
+  
+    #contactForm label,
+    #contactForm input,
+    #contactForm textarea {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+  
+    #contactForm textarea {
+      resize: vertical;
+      /* Pour le redimensionnement vertical de la zone de texte */
+    }
+  
+    #contactForm input[type="submit"],
+    #contactForm input[type="reset"] {
+      width: 49%;
+      /* Pour répartir les boutons sur deux colonnes */
+      display: inline-block;
+      box-sizing: border-box;
+    }
+  
+    .logo {
+      float: none;
+      margin: 0;
+      display: block;
+      width: 120px;
+      /* Pour ajustez la taille du logo pour les petits écrans */
+      height: 35px;
+      /* Ajustez la taille du logo pour les petits écrans */
+      background-position: center center;
+      /* Centrer le logo sur les petits écrans */
+    }
+    
+
+
+    #contactForm label,
+    #contactForm input,
+    #contactForm textarea {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+  }
+
+  /* Media query pour les ordinateurs */
+  @media only screen and (min-width: 901px) {
+
+    #main-image {
+      height: 150px;
+      margin-top: 50px;
+      padding: 5px;
+      text-align: center;
+    }
+
+
+    .pages-container li {
+      display: flex;
+      margin: 0;
+      padding-left: 20px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    #main-image h2 {
+      font-size: 20px;
+    }
+
+    .page-link {
+      width: 50%;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    #contactForm label,
+    #contactForm input,
+    #contactForm textarea {
+      /*width: ; /* Permet deux colonnes sur les écrans plus larges */
+      display: inline-block;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+  }
+}

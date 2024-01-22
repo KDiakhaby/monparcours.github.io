@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mon Parcours en Géographie</title>
+  <link rel="stylesheet" href="index-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper-1">
+      <h1>Master G2M<span class="orange">.</span></h1>
+      <nav>
+        <ul>
+          <li class="Accueil"><a href="index.html" class="logo"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <p class="justifie">Bienvenue sur mon parcours universitaire en géographie ! <br /> <br /> 
+      Passionné par l'étude des territoires, j'ai entrepris un cursus universitaire visant à explorer les multiples 
+      facettes de cette discipline fascinante. Au fil de mes études, j'ai eu l'opportunité de découvrir la géographie en
+      tant que discipline universitaire et en tant que science sociale. De la licence 1 à la licence 3, j'ai acquis des
+      connaissances approfondies sur les paysages, les enjeux environnementaux, l'aménagement du territoire et bien d'autres
+      aspects qui ont enrichi ma compréhension du monde qui nous entoure.
+      En parallèle, passionné par l'informatique et les technologies géospatiales, j'ai eu le privilège d'effectuer des
+      expériences de stage et de terrain qui ont complété ma formation académique. Ces expériences m'ont permis de
+      mettre en pratique mes connaissances théoriques, d'approfondir ma compréhension des dynamiques territoriales et de
+      développer des compétences concrètes dans le domaine de la géographie.
+      Je vous invite à explorer mon parcours universitaire, mes expériences de stage et de terrain, ainsi que mes
+      découvertes au travers de cette page. N'hésitez pas à parcourir les différentes sections pour en apprendre
+      davantage sur mon cheminement académique et mes réalisations dans le domaine de la géographie.
+  </p>
+  <br /> <br />
+  
+
+    <section id="main-image">
+      <div class="wrapper-main">
+        <ul class="pages-container">
+          <li class="page-link" id="licence1-link"><a href="licence1.html"><strong>Licence 1</strong></a></li>
+          <li class="page-link" id="licence2-link"><a href="licence2.html"><strong>Licence 2</strong></a></li>
+          <li class="page-link" id="licence3-link"><a href="licence3.html"><strong>Licence 3</strong></a></li>
+          <li class="page-link" id="carte-link"><a href="carte-interactive.html"><strong>Carte Interactive</strong></a>
+          </li>
+          <li class="page-link" id="contact-link"><a href="#contact"><strong>contact</strong></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrapper-contact">
+        <h3>Contactez-moi</h3>
+        <p class="info">Pour plus d'informations.</p>
+        <form id="contactForm">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" placeholder="Votre nom" required>
+
+          <label for="firstname">Prénom :</label>
+          <input type="text" id="firstname" placeholder="Votre prénom" required>
+
+          <label for="email">Email :</label>
+          <input type="text" id="email" placeholder="Votre email" required>
+
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <input type="submit" value="Envoyer" class="button-3">
+          <input type="reset" value="Effacer" class="button-3">
+        </form>
+      </div>
+    </section>
+
+    <script>
+      // Fonction pour effacer le formulaire
+      function resetForm() {
+        document.getElementById("contactForm").reset();
+      }
+    </script>
+
+  </main>
+
+  <footer>
+    <div>
+      <h5>Kounting-MonParcours<span class="orange">.</span></h5>
+      <div class="copyright">Copyright © Tous droits réservés.</div>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/map.js"></script>
+</body>
+
+
+</html>
